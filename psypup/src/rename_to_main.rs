@@ -28,7 +28,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let server = "<SERVER>";
     let port = 6667;
     let nick = "psypup";
-    let channel = "<CHANEL>";
+    let channel = "<CHANNEL>";
 
     let config = Config {
         nickname: Some(nick.to_owned()),
