@@ -1,0 +1,19 @@
+{
+  "name": "psyairc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.7.5",
+    "dotenv": "^16.4.5",
+    "irc-framework": "^4.14.0",
+    "node-fetch": "^2.7.0",
+    "typescript": "^5.6.3"
+  }
+}
