@@ -51,7 +51,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     while let Some(message) = stream.next().await.transpose()? {
         match message.command {
             Command::PRIVMSG(ref target, ref msg) => {
-                if target == channel && msg.contains("psypup") {
+                if target == channel && msg.starts_with(&format!("{}:", nick)) {
                     let query = msg
                         .replace(&format!("{}:", nick), "")
                         .replace(nick, "")
